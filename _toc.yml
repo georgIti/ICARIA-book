@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/recipes/introduction/introduction
+
+chapters:
+- file: content/recipes/introduction/about-icaria
+- file: content/recipes/introduction/glossary-terms
+- file: content/search-table
