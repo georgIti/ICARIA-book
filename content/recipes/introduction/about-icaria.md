@@ -17,7 +17,7 @@ ICARIA researches `three European case studies` to understand climate impacts an
 
 `Technological results`
 
-- {index}`modelling tools`: Climate Multi-Hazard modelling tools 
+- Climate Multi-Hazard {index}`modelling tools` 
 - Holistic climate resilience assessment tool
 - Portfolio of adaptation solutions
 - Decision Support System (DSS) for adaptation to extreme and compound events with cost-effective measures.
