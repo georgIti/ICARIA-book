@@ -1,12 +1,8 @@
 # Introduction
 
-## Your guide in the FAIRification journey
+## **I**mproving **C**lim**A**te **R**esilience of cr**I**tical **A**ssets
 
-The FAIR Cookbook is a collection of birds-eye view recipes on the FAIR components, the infrastructure needed, and a set of applied examples in the Life Sciences, offering a deep dive in technical aspects of FAIR data management.
-This is a ‘live resource’, because recipes are added and improved, collaboratively and iteratively, in an open manner.
-The objective of the FAIR Cookbook is to develop and disseminate guidance and processes needed to make and keep data FAIR in the Life Sciences.
-
-Well-managed research data from academia and the industry sectors generate value far beyond the initial research purpose. Current  Life Sciences data resources are extensively used by the research community across all sectors e.g. from generating evidence of a mechanism of disease through to toxicology. However, a large proportion of data generated across all sectors of Life Sciences are neither easily discoverable nor accessible and interoperable, making (re)use challenging. Our ambition is to contribute to the development of public and private capacity for high quality data management, by providing recipes that see FAIR Principles embedded in the actual generation of data.
+The ICARIA project will promote the use of a comprehensive asset-level modelling framework to achieve a better understanding of climate-related impacts produced by complex, compound and cascading disasters and the possible risk reduction provided by suitable, sustainable and cost-effective adaptation solutions.
 
 ## Who is it for?
 
