@@ -1,8 +1,18 @@
 # Introduction to project ICARIA-
 
-The number of climate-related disasters has been progressively increasing in the last two decades and this trend could be drastically exacerbated in the medium- and long-term horizons according to climate change projections. It is estimated that, between 2000 and 2019, 7,348 natural hazard-related disasters have occurred worldwide, causing 2.97 trillion US$ losses and affecting 4 billion people (UNDRR, 2020). These numbers represent a sharp increase in the number of recorded disaster events in comparison with the previous twenty years. Much of this increase is due to a significant rise in the number of climate-related disasters (heatwaves, droughts, flooding, etc.), including compound events, whose frequency is dramatically increasing because of the effects of climate change and related global warming. In the future, by mid-century, the world stands to lose around 10% of total economic value from climate change if the temperature increase stays on the current trajectory, and both the Paris Agreement and 2050 net-zero emissions targets are not met.
+:identifier_text: FCB044
+:identifier_link: http://w3id.org/faircookbook/FCB044
+:difficulty_level: 4
+:recipe_type: applied_example
+:reading_time_minutes: 10
+:intended_audience: data_manager, data_curator, ontologist
+:maturity_level: 2
+:maturity_indicator: 1, 2
+:has_executable_code: nope
+:recipe_name: Readying IMI Oncotrack - clinical cohort datasets for deposition to EBI Biosamples
 
-> [!IMPORTANT]  
+The number of climate-related disasters has been progressively increasing in the last two decades and this trend could be drastically exacerbated in the medium- and long-term horizons according to climate change projections. It is estimated that, between 2000 and 2019, 7,348 natural hazard-related disasters have occurred worldwide, causing 2.97 trillion US$ losses and affecting 4 billion people (UNDRR, 2020). These numbers represent a sharp increase in the number of recorded disaster events in comparison with the previous twenty years. Much of this increase is due to a significant rise in the number of climate-related disasters (heatwaves, droughts, flooding, etc.), including compound events, whose frequency is dramatically increasing because of the effects of climate change and related global warming. In the future, by mid-century, the world stands to lose around 10% of total economic value from climate change if the temperature increase stays on the current trajectory, and both the Paris Agreement and 2050 net-zero emissions targets are not met.
+  
 > In this framework, Project ICARIA has the overall objective to promote the definition and the use of a comprehensive asset-level modeling framework to achieve a better understanding of climate-related impacts produced by complex, compound, and cascading disasters and the possible risk reduction provided by suitable, sustainable and cost-effective adaptation solutions. This project will be especially devoted to critical assets and infrastructures that are susceptible to climate change, in a sense that its local effects can result in significant increases in the cost of potential losses for unplanned outages and failures, as well as maintenance – unless an effort is undertaken in making these assets more resilient. ICARIA aims to understand how future climate might affect the life-cycle costs of these assets in the coming decades and to ensure that, where possible, investments in terms of adaptation measures are made upfront to face these changes. 
  
 
