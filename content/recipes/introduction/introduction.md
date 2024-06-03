@@ -1,15 +1,4 @@
-# Introduction to project ICARIA-
-
-:identifier_text: FCB044
-:identifier_link: http://w3id.org/faircookbook/FCB044
-:difficulty_level: 4
-:recipe_type: applied_example
-:reading_time_minutes: 10
-:intended_audience: data_manager, data_curator, ontologist
-:maturity_level: 2
-:maturity_indicator: 1, 2
-:has_executable_code: nope
-:recipe_name: Readying IMI Oncotrack - clinical cohort datasets for deposition to EBI Biosamples
+# Introduction to project ICARIA
 
 The number of climate-related disasters has been progressively increasing in the last two decades and this trend could be drastically exacerbated in the medium- and long-term horizons according to climate change projections. It is estimated that, between 2000 and 2019, 7,348 natural hazard-related disasters have occurred worldwide, causing 2.97 trillion US$ losses and affecting 4 billion people (UNDRR, 2020). These numbers represent a sharp increase in the number of recorded disaster events in comparison with the previous twenty years. Much of this increase is due to a significant rise in the number of climate-related disasters (heatwaves, droughts, flooding, etc.), including compound events, whose frequency is dramatically increasing because of the effects of climate change and related global warming. In the future, by mid-century, the world stands to lose around 10% of total economic value from climate change if the temperature increase stays on the current trajectory, and both the Paris Agreement and 2050 net-zero emissions targets are not met.
   
