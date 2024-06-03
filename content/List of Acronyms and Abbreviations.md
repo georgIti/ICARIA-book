@@ -145,6 +145,5 @@ VSCN Virtual Climate Station Network
 WDF The Wet Day Frequency
 WISC  Windstorm Information Service
 WP Work Package
-WP Work Package
 WRF Weather Research & Forecasting Model
 XAI Explainable Artificial Intelligence
