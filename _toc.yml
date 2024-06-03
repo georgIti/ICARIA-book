@@ -5,6 +5,13 @@ format: jb-book
 root: content/recipes/introduction/introduction
 
 chapters:
-- file: content/recipes/introduction/about-icaria
+- file: content/about-icaria
+- file: content/recipes/inrtoduction/introduction
+- file: content/Executive Summary
+- file: content/Objectives of the deliverable
+- file: content/Recurring data gaps in impact assessment modelling
+- file: content/ICARIA Cookbook recipes for data gap filling
+- file: content/ICARIA's domain user survey
+- file: content/Conclusions
 - file: content/search-table
 - file: genindex.md
