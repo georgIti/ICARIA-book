@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Methodologies for data-gap filling and uncertainties treatment &#8212; ICARIA book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Methodologies for data-gap filling and uncertainties treatment';</script>
+    <link rel="icon" href="../_static/logo.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="recipes/introduction/introduction.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="ICARIA book - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="ICARIA book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="recipes/introduction/introduction.html">
+                    <u>Introduction to project ICARIA</u>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Objectives%20of%20the%20deliverable.html"><u> Obejctives of the deliverable </u></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Recurring%20data%20gaps%20in%20impact%20assessment%20modelling.html"><u>Recurring data gaps in impact assessment modelling </u></a></li>
+<li class="toctree-l1"><a class="reference internal" href="ICARIA%20Cookbook%20recipes%20for%20data%20gap%20filling.html">ICARIA cookbook: recipes for data gap filling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Conclusions.html"><u> Conclusions </u></a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-table.html">Search Table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/georgIti/ICARIA-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/georgIti/ICARIA-book/issues/new?title=Issue%20on%20page%20%2Fcontent/Methodologies for data-gap filling and uncertainties treatment.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Methodologies for data-gap filling and uncertainties treatment.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><u> Methodologies for data-gap filling and uncertainties treatment </u></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-methodologies-in-icaria-cookbook"><u> Main methodologies in ICARIA Cookbook </u></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-and-dynamical-methodologies">Statistical and dynamical Methodologies</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="methodologies-for-data-gap-filling-and-uncertainties-treatment">
+<h1><u> Methodologies for data-gap filling and uncertainties treatment </u><a class="headerlink" href="#methodologies-for-data-gap-filling-and-uncertainties-treatment" title="Link to this heading">#</a></h1>
+<section id="main-methodologies-in-icaria-cookbook">
+<h2><u> Main methodologies in ICARIA Cookbook </u><a class="headerlink" href="#main-methodologies-in-icaria-cookbook" title="Link to this heading">#</a></h2>
+<p>The ICARIA Cookbook provides a series of “<em>recipes</em>” that include references and technical specifications to address data-gaps and uncertainties with respect to the ICARIA Holistic modelling framework. The main methods used in ICARIA, widely consolidated in literature, are summarized in the following.</p>
+</section>
+<section id="statistical-and-dynamical-methodologies">
+<h2>Statistical and dynamical Methodologies<a class="headerlink" href="#statistical-and-dynamical-methodologies" title="Link to this heading">#</a></h2>
+<p>When talking about the generation of climate information in ICARIA, one of the main concerns that both climate scientists (as information providers) and sectoral partners or decision-makers (as information receivers) have to deal with is the inherent uncertainty of climate data3,4. Global Climate Models (<span class="target" id="index-0"></span>GCMs), are numerical models that represent the climate system with varying degrees of complexity and are based on the physical, chemical and biological properties of its components, their interactions and feedback processes. Each GCM represents all components of the earth system (atmosphere, cryosphere, biosphere, ocean, ice-sheets), as well as human impacts via greenhouse gas emissions and simulates possible future climate states. By representing all components, also their interactions are depicted (e.g., melting of sea ice changes the ocean’s salinity and albedo, in turn affecting ocean’s temperature, which then affects the atmospheric temperature). These models provide important information, however, their spatial resolution is relatively coarse (e.g., 100 km x 100 km, meaning 1 temperature, precipitation etc. value for a grid box of 10.000km²). To address this limitation, downscaling techniques are employed. In this sense, ICARIA has tried to tackle this uncertainty by not sticking to one but <u> considering the two main sources of generation of information at the local scale available: dynamical and statistical downscaling </u>. ICARIA has incorporated into its procedures these two downscaling methods.</p>
+<p><u> Statistical downscaling </u> obtains empirical relationships between large-scale variables from GCMs and high-resolution (surface) variables, allowing us to obtain very local results (like in a village) with less error than the dynamical one. The statistical downscaling methodology applied in ICARIA by FIC, named FICLIMA5, consists of a two-step analogue/regression statistical method which has been used in national and international projects with good verification results. The first step is common for all simulated climate variables and it is based on an analogue stratification. For the second step, the procedures applied depend on the variable of interest, ranging from multiple linear regression in temperature, clustering of rainfall most analogous days for precipitation, or transfer functions between probability distributions and parametric bias corrections for wind or RH. This methodology was applied in ICARIA for the three case studies using 10 GCMs and the 4 Tier 1 Shared Socioeconomic Pathways (<span class="target" id="index-1"></span>SSPs) (1-2.6, 2-4.5, 3-7.0 and 5-8.5).</p>
+<p><u> Dynamical downscaling, </u> on the other hand, increases the resolution of the GCMs over the region of interest with RCMs, taking into account local characteristics and altering physical processes, allowing us to obtain results in areas (like watersheds) where there are no observed data as well as a better representation of atmospheric processes. For the so-called GCM to better represent local features such as topography or land use, the output of the general circulation models is used to drive regional climate models. Regional climate models represent atmospheric processes at spatial resolutions of ~1-12 km. This so-called dynamical downscaling was applied within ICARIA for 2 SSP scenarios (SSP126, SSP585), using two kinds of regional climate models (Weather Research &amp; Forecasting Model <span class="target" id="index-2"></span>WRF and Consortium for Small-scale modelling <span class="target" id="index-3"></span>COSMO) for Salzburg and South Aegean region.</p>
+<p>On the other hand, there’s the uncertainty problem about climate information. Efforts within the scientific community focus on addressing and quantifying uncertainties in climate simulations. Within climate projections two kinds of uncertainties are discussed, first the scenario uncertainty, and second the model uncertainty. The first one relates to the fact that we don’t know which emission scenario will become reality until 2100, thus the temperature evolution until the end of the century is uncertain, but within the simulated ranges (low to high emissions). The latter represents the fact that for the same emission scenario, two models might yield opposing trends, which is the case for precipitation. As highly complex processes of different temporal and spatial scales are at play for precipitation, its correct representation within climate models is still subject of research. Even though we already know a lot, the approaches taken within two different models might cause opposing trends of precipitation amounts until 2100. Within ICARIA, each downscaling methodology assesses its own uncertainty with inner processes of verification through the use of different procedures and statistics, ensuring that the methodology introduces the least amount of uncertainty into the outcomes. As a result, both methods are then combined following the ensemble strategy, displaying the different outcomes and impacts for future climate states. Often the medians and quantiles are applied to gain a better knowledge and reduce uncertainty, enhancing the understanding of future climates for specific locations.</p>
+<p><u> Data-driven and data fusion methodologies </u></p>
+<p>Data-driven methodologies offer an additional tool for climate resilience and especially for defining, estimating, and treating data gaps6–8. While it finds application in a majority of fields, the ICARIA project and D1.3, include data-driven methods for studying data gaps for climate resilience. These methods guide us in filling data gaps in time series forecasting at large scales, in addressing weather data, in expanding hazard datasets by combining input from inventories (e.g. before and after an extreme event), in enhancing large-scale quantitative hazard assessments, etc.. Further, the integration of public data with asset characteristics (e.g., buildings), helps to estimate and generate representative values for characteristics when data gaps appear, providing key input for improving critical response strategies and risk assessments from regional to national scales. Data-driven methodologies can play a key role as an auxiliary tool for data-gaps treatment while additionally providing complementary information to real-world experiments, filling geospatial data gaps about infrastructure, and expanding the output of climate models.</p>
+<p><u> Expert elicitation methods </u></p>
+<p>Expert elicitation is a structured procedure for obtaining uncertainty judgments from experts, measuring their individual judgment capabilities with a performance-based metric, and then applying mathematical scoring rules to combine these individual judgments into a ‘<em>rational consensus</em>’ that can inform the deliberations of policy-makers. One of the most widely adopted elicitation methods is the “<em>classical model</em>” formulated by Cooke9. The classical model has been developed to aggregate expert judgments based on performance measures, and is based on the scoring of expert judgment in terms of statistical accuracy and informativeness.  The statistical accuracy, representing the “<em>calibration</em>” of expert’s opinion, is tested through a number of questions for which the answer can be confronted with observed values and expressed by a probability index (the so called “<em>seed variables</em>”, whose value is known to the analysts at the moment of the elicitation but are not known to the experts at the moment of the elicitation). Experts are thus scored according to their performance in assessing seed variables. A low value (near zero) expresses a high accuracy. The product of statistical accuracy and informativeness for each expert is their combined score, expressed as Performance Weighted (<span class="target" id="index-4"></span>PW) combinations. Other assessment values can be derived from elicitation, such as Equally Weighted (<span class="target" id="index-5"></span>EW) or Harmonically Weighted (<span class="target" id="index-6"></span>HW) combinations, as well as individual expert assessments.</p>
+<figure class="align-default" id="markdown-fig">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/eruption.png"><img alt="eruption" class="bg-primary mb-1" src="../_images/eruption.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Simplified volcanic eruptive scenario event tree, incorporating probabilities of occurrence of different eruptive events derived from successive expert elicitations10. Probabilities of hazard transitions are derived from expert elicitation using the Cooke classical method.</span><a class="headerlink" href="#markdown-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The application of expert elicitation methods is particularly appropriate to determine target variables characterized by significant level of uncertainty, which cannot be sufficiently described using current models or field data, but for which a rational consensus among experts can be reached. Based on the Cooke’s classical model, several expert elicitation approaches and supporting tools have been developed, and are characterized by the following common features:</p>
+<ul class="simple">
+<li><p>Scrutability: All data and processing tools are open to peer review and results must be reproducible by competent reviewers.</p></li>
+<li><p>Empirical control: Quantitative expert assessments are subjected to quality controls.</p></li>
+<li><p>Neutrality: The method for evaluating expert opinions should encourage experts to state their true opinions.
+Fairness: Expert opinions are not judged, prior to processing the results of their assessments.</p></li>
+</ul>
+<p><u> Uncertainty treatment methods </u></p>
+<p>The Climate-ADAPT <u>uncertainty guidance</u> highlights the many levels of uncertainties associated to climate change impacts and adaptation: Future emissions trajectories of greenhouse gases and aerosols, which are influenced by demographic, economic, and technological developments and international climate agreements, will determine the scale and speed of future climate change. The impact of climate change on the environment and society will be shaped by the future development of non-climatic factors, including socio-economic, demographic, technological, and environmental changes. Measurement errors arise from using imperfect observational tools, such as rain gauges, and from data processing methods, like algorithms for estimating surface temperatures from satellite data. Aggregation errors occur due to incomplete temporal and spatial data coverage. Natural variability is driven by unpredictable processes within the climate system, such as atmospheric and oceanic changes, future volcanic eruptions, and dynamics within climate-sensitive environmental and social systems, like ecosystems. Model limitations in climate and impact models stem from their limited resolution, which affects the detailed representation of phenomena like cloud physics, and from an incomplete understanding of individual Earth system components, such as dynamic ice sheets, their interactions and feedbacks, like climate-carbon cycle feedbacks, and environmental or social systems under study, such as demographic changes in flood-prone areas or specific urban morphologies and features of building, open spaces and vegetative cover that affect soil drainage capacities and urban heat island conditions. Lastly, societal preferences and political priorities influence the significance placed on specific climate impacts, such as local or regional biodiversity loss.</p>
+<figure class="align-default" id="id1">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/uncertainty.jpg"><img alt="uncertainty" class="bg-primary mb-1" src="../_images/uncertainty.jpg" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Climate resilience &amp; Decision-making uncertainty Typology based on knowledge uncertainty, system system uncertainty, taxonomy uncertainty, and decision uncertainty (modified after Ascough II et al., 2008)11.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>These types of uncertainties can be connected to various areas of “<em>Knowledge Uncertainty</em>”, “<em>Variability Uncertainty</em>” and “<em>Decision Uncertainty</em>”, as defined by Walker et al. (2003)12, which lead to the necessity of considering uncertainty as essential component of decision-making for climate resilience. According to Street and Nilsson (2014)13, recognizing and reflecting the nature and characteristics of uncertainty in the use of evidence leads to better-informed, more relevant, and robust decisions. By acknowledging uncertainties instead of expecting clear-cut outcomes, uncertainties become more manageable, enabling the formulation of coherent decisions and policies. Furthermore, the acknowledgment of uncertainties in hazard/impact assessments contribute to minimizing the risk of maladaptation and to a more effective risk management. In particular, the focus of ICARIA on probabilistic assessment of complex events (compound coincident, compound consecutive, cascading effects, see <em>D1.1</em>), which requires articulated event tree analysis, whose uncertainties in terms of hazard transition probabilities, and/or in terms of likelihood of cascading effects given a certain damage threshold on critical service assets and networks1, may lead to propagation of error in the impact assessment. In ICARIA, two methods for the evaluation of the uncertainties connected to the compound events and cascading effects timelines are suggested: (1) <u> Bayesian methods </u>, and (2) <u> Expert Elicitation methods </u> (see also above).</p>
+<p><u> Bayesian methods in uncertainty treatment </u></p>
+<p>Statistics consists of two main competing schools of thought: The frequentist or classical approach to statistical inference (which includes hypothesis testing and confidence intervals), and the Bayesian approach.
+The underlying difference between the Bayesian and frequentist approaches to statistical inference is in the definition of probability. A frequentist views probability as a long-run frequency. When a frequentist asserts that the probability of a fair coin tossed landing heads is 1/2, he means that in the long run, over repeated tosses, the coin will land heads half the time. In contrast, a Bayesian, who will also surely say that the probability a coin lands heads is 1/2, is expressing a degree of belief that the coin lands heads, perhaps arguing that based on the symmetry of the coin there is no reason to think that one side is more likely to come up than the other side. This definition of probability is usually termed subjective probability. Whereas, in practice, a frequentist uses probability to express the frequency of certain types of data to occur over repeated trials, a Bayesian uses probability to express belief in a statement about unknown quantities”14.
+At the base of Bayesian Analysis, there is the Bayes’ rule. For two events A and B, having probabilities P(A) and P(B), respectively, the conditional probability,   of A given B, P(A | B),  can be assessed through the Bayes’ rule:</p>
+<div class="math notranslate nohighlight" id="equation-bayes-rule-1">
+<span class="eqno">()<a class="headerlink" href="#equation-bayes-rule-1" title="Link to this equation">#</a></span>\[P(A | B) = P(A) ∙ P(B | A) / P(B)\]</div>
+<p>It is just a way of converting a probability like P(B | A) into one like P(A | B), that is, the probability that B occurs given A has occurred to the probability that A occurs given B.
+In this formulation, P(A) is called the prior probability and P(B | A) is called the likelihood. P(B) is called the normalization factor. Bayes’ rule can be extended for random variables and their distribution functions in a straightforward way. It can be used to combine a prior distribution and a likelihood function to produce a posterior distribution. The posterior distribution might then be used as an input in a risk analysis15. We can write Bayes’ rule as:</p>
+<div class="math notranslate nohighlight" id="equation-bayes-rule-2">
+<span class="eqno">()<a class="headerlink" href="#equation-bayes-rule-2" title="Link to this equation">#</a></span>\[P(θ| E) = P(θ) P(E | θ) / P(E)                                                                                     	(2\]</div>
+<p>where P denotes probability mass (or density), <span class="math notranslate nohighlight">\(θ\)</span> is a value of the random variable in question (for example the magnitude of the Hazard Hi) and E denotes the evidence being considered (for example, a triggering event TH of assigned magnitude). <span class="math notranslate nohighlight">\(P(θ)\)</span> is the prior probability that the random variable takes on the value <span class="math notranslate nohighlight">\(θ\)</span>. Because <span class="math notranslate nohighlight">\(P(θ)\)</span> is a distribution of <span class="math notranslate nohighlight">\(θ\)</span>, its integral with respect to θ is one. <span class="math notranslate nohighlight">\(P(E|θ)\)</span> is the conditional likelihood function that expresses the probability of the evidence given a particular value of <span class="math notranslate nohighlight">\(θ\)</span>. The likelihood function is the probability of observing a value if the value were actually <span class="math notranslate nohighlight">\(θ\)</span>, interpreted as a function of <span class="math notranslate nohighlight">\(θ\)</span>. It is not a distribution, so its integral need not be one. The normalizing factor P(E) corresponds to the probability of having obtained the observed evidence. This divisor is the sum (or integral) with respect to <span class="math notranslate nohighlight">\(θ\)</span> of the product of the prior and the likelihood. Bayes’ rule is applied for all values of <span class="math notranslate nohighlight">\(θ\)</span> to obtain <span class="math notranslate nohighlight">\(P(θ|E)\)</span>, which is the posterior distribution of <span class="math notranslate nohighlight">\(θ\)</span> given the evidence. Both the prior and the likelihood are functions of <span class="math notranslate nohighlight">\(θ\)</span>, and Bayes’ rule for distributions is essentially their product for each possible value of <span class="math notranslate nohighlight">\(θ\)</span>. The normalizing factor is not a function of <span class="math notranslate nohighlight">\(θ\)</span>, but has a single value such that the resulting posterior distribution integrates to unity.
+For most Bayesians, the prior distribution is derived from the opinions or beliefs of the analyst. It is intended to represent, at least initially, the analyst’s subjective knowledge before any specific evidence is considered. Thus, it may be the result of amorphous preconceptions, mechanistic reasoning, hearsay, or some combination of these things. The likelihood function represents a model, also perhaps taken from the subjective knowledge of the analyst, of what data implies about the variable in question. The normalizing factor is often difficult to compute analytically, but the use of conjugate pairs may greatly simplify the problem. When these computational shortcuts can’t be used, recently developed software programs may be able to solve the problem using computer-intensive methods.
+In synthesis, a typical Bayesian analysis can be outlined in the following steps14:</p>
+<ul class="simple">
+<li><p>Formulate a probability model for the data.</p></li>
+<li><p>Decide on a prior distribution, which quantifies the uncertainty in the values of the unknown model parameters before the data are observed.</p></li>
+<li><p>Observe the data, and construct the likelihood function based on the data and the probability model formulated in step 1. The likelihood is then combined with the prior distribution from step 2 to determine the posterior distribution, which quantifies the uncertainty in the values of the unknown model parameters after the data are observed.</p></li>
+<li><p>Summarize important features of the posterior distribution, or calculate quantities of interest based on the posterior distribution. These quantities constitute statistical outputs, such as point estimates and intervals.</p></li>
+</ul>
+<p>The main goal of a typical Bayesian statistical analysis is to obtain the posterior distribution of model parameters. The posterior distribution can best be understood as a weighted average between knowledge about the parameters before data is observed (which is represented by the prior distribution) and the information about the parameters contained in the observed data (which is represented by the likelihood function). From a Bayesian perspective, just about any inferential question can be answered through an appropriate analysis of the posterior distribution. Once the posterior distribution has been obtained, one can compute point and interval estimates of parameters, prediction inference for future data, and probabilistic evaluation of hypotheses.</p>
+<p><u> Elicitation methods in uncertainty treatment </u></p>
+<p>Expert judgment is sought when substantial scientific uncertainty impacts on a decision process. Because there is uncertainty, the experts themselves are not certain and hence will typically not agree. Informally soliciting expert advice is not new. Structured expert judgment refers to an attempt to subject this process to transparent methodological rules, with the goal of treating expert judgments as scientific data in a formal decision process. The process by which experts come to agree is the scientific method itself16.
+A valid goal of structured elicitation is to quantify uncertainty, not remove it from the decision process.
+The elicitation technique adopted in Snowball methodology is the “<em>classical model</em>”17. It is a structured procedure for obtaining uncertainty judgments from experts, measuring their individual judgment capabilities with a performance-based metric, and then applying mathematical scoring rules to combine these individual judgments into a ‘rational consensus’ that can inform the deliberations of policy-makers.
+The Classical Model method relies on the use of proper scoring rules for weighting and combining expert judgments through statistical accuracy and information scores, measured on calibration variables (see Cooke, 1991)17, and operationalizes principles for rational consensus via a performance-based linear pooling or weighted averaging model. The weights are derived from experts’ calibration and information scores, as measured on seed item calibration variables. Calibration variables serve a threefold purpose18:</p>
+<ul class="simple">
+<li><p>to quantify experts’ performance as subjective probability assessors;</p></li>
+<li><p>to enable performance-optimised combinations of expert distributions;</p></li>
+<li><p>to evaluate and hopefully validate the combination of expert judgments.</p></li>
+</ul>
+<p>The name ‘<em>Classical Model</em>’ derives from an analogy between calibration measurement and classical statistical hypothesis testing. In the Classical Model performance-based weights use two quantitative measures of competency: calibration and information. Calibration measures the statistical likelihood that a set of experimental results correspond, in a statistical sense, with the expert’s assessments. Information measures the degree to which an expert’s uncertainty distribution is concentrated.</p>
+<p>Its main steps are the following:</p>
+<ul class="simple">
+<li><p>A group of experts is selected.</p></li>
+<li><p>Expressing views as elemental uncertainty distributions, experts assess a set of variables (‘<em>seed items</em>’), true values of which are known or become known post hoc.</p></li>
+<li><p>Experts’ responses are scored with regard to statistical likelihood that distributions over the set of seed items correspond to the observed or measured results - and also scored by a measure of informativeness compared to uniform background distribution.</p></li>
+<li><p>The two scores are combined to form a weight for each expert.</p></li>
+<li><p>Experts are elicited individually regarding their uncertainty judgments in relation to questions of interest (the ‘<em>target items</em>’).</p></li>
+<li><p>Performance-based or equal weights scores are applied to individual responses to obtain weighted pooling of uncertainty distribution for each target items.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-methodologies-in-icaria-cookbook"><u> Main methodologies in ICARIA Cookbook </u></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-and-dynamical-methodologies">Statistical and dynamical Methodologies</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By ITI-CERTH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The ICARIA book is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a> (CC BY 4.0) license.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
