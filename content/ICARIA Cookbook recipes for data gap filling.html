@@ -181,7 +181,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Objectives%20of%20the%20deliverable.html"><u> Obejctives of the deliverable </u></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Recurring%20data%20gaps%20in%20impact%20assessment%20modelling.html"><u>Recurring data gaps in impact assessment modelling </u></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">ICARIA cookbook: recipes for data gap filling</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><u> ICARIA cookbook: recipes for data gap filling </u></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Conclusions.html"><u> Conclusions </u></a></li>
 <li class="toctree-l1"><a class="reference internal" href="search-table.html">Search Table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -370,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>ICARIA cookbook: recipes for data gap filling</h1>
+    <h1><u> ICARIA cookbook: recipes for data gap filling </u></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,7 +380,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cookbook-structure-and-general-template-in-jupyter-book">Cookbook structure and general template in Jupyter book</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cookbook-structure-and-general-template-in-jupyter-book"><o> Cookbook structure and general template in Jupyter book </o></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cookbook-recipes">Cookbook “<em>recipes</em>”</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#description-of-recipe-and-identification">Description of Recipe and Identification:</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-methods">Statistical methods</a></li>
 </ul>
 </li>
@@ -396,27 +400,31 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="icaria-cookbook-recipes-for-data-gap-filling">
-<h1>ICARIA cookbook: recipes for data gap filling<a class="headerlink" href="#icaria-cookbook-recipes-for-data-gap-filling" title="Link to this heading">#</a></h1>
+<h1><u> ICARIA cookbook: recipes for data gap filling </u><a class="headerlink" href="#icaria-cookbook-recipes-for-data-gap-filling" title="Link to this heading">#</a></h1>
 <section id="cookbook-structure-and-general-template-in-jupyter-book">
-<h2>Cookbook structure and general template in Jupyter book<a class="headerlink" href="#cookbook-structure-and-general-template-in-jupyter-book" title="Link to this heading">#</a></h2>
-<p>A Jupyter Book is an open-source framework designed to serve as a generator of digital documents and books by integrating Jupyter Notebooks and Markdown files. It enables the seamless unification and presentation of data, code, and narrative text, making it highly suitable for interdisciplinary research and educational purposes. For combining climate resilience methodologies with data-driven techniques, the Jupyter Book will provide a structured environment for rendering extensive datasets, documenting analytical workflows, and coherently delivering results, ensuring replication, strengthening collaboration within the project, and fostering comprehensive dissemination of findings. In ICARIA, a supporting cookbook will be developed by collecting and compiling datasets and methodologies from the literature in a Jupyter notebook. This notebook will mirror the recipes listed in the initial D1.3 document, creating a scaffold for a more rigid understanding of the data gaps, which will later inform the implementation of Trials and Mini-Trials, prioritizing which gaps tend to appear, yielding fruitful results when addressed with representative methods. More specifically the Jupyter book will be organized as follows: each section of the D1.3 document will be systematically transferred to the Jupyter book, with each section receiving its dedicated chapter. For Chapter 3, which enumerates the cookbook’s recipes, distinct categories—statistical methods, dynamical downscaling methods, data-driven methodologies, expert elicitation methods, and uncertainty treatment methods—will each be allocated a dedicated subsection containing a detailed list of recipes. Representative information for each recipe, as presented in their designed tables, will be transferred to the appropriate subsection. Furthermore, the domain survey data, including the questionnaire, responses, and a summary of results, will be thoroughly documented. Finally, the chapter referring to the reflections on data gaps and supplementary information from the appendix will be incorporated to ensure a comprehensive and scientific presentation. The Jupyter book will be hosted in a GitHub repository, freely accessible, allowing for continuous updates and extensions of the content, besides easy access and modifications by the case study facilitators. A Figure of the footer of the Jupyter book can be seen below.</p>
+<h2><o> Cookbook structure and general template in Jupyter book </u><a class="headerlink" href="#cookbook-structure-and-general-template-in-jupyter-book" title="Link to this heading">#</a></h2>
+<p>A Jupyter Book is an open-source framework designed to serve as a generator of digital documents and books by integrating Jupyter Notebooks and Markdown files. It enables the seamless unification and presentation of data, code, and narrative text, making it highly suitable for interdisciplinary research and educational purposes. For combining climate resilience methodologies with data-driven techniques, the Jupyter Book will provide a structured environment for rendering extensive datasets, documenting analytical workflows, and coherently delivering results, ensuring replication, strengthening collaboration within the project, and fostering comprehensive dissemination of findings. In ICARIA, a supporting cookbook will be developed by collecting and compiling datasets and methodologies from the literature in a Jupyter notebook. This notebook will mirror the recipes listed in the initial <em>D1.3</em> document, creating a scaffold for a more rigid understanding of the data gaps, which will later inform the implementation of Trials and Mini-Trials, prioritizing which gaps tend to appear, yielding fruitful results when addressed with representative methods. More specifically the Jupyter book will be organized as follows: each section of the <em>D1.3</em> document will be systematically transferred to the Jupyter book, with each section receiving its dedicated chapter. For Chapter 3, which enumerates the cookbook’s recipes, distinct categories—statistical methods, dynamical downscaling methods, data-driven methodologies, expert elicitation methods, and uncertainty treatment methods—will each be allocated a dedicated subsection containing a detailed list of recipes. Representative information for each recipe, as presented in their designed tables, will be transferred to the appropriate subsection. Furthermore, the domain survey data, including the questionnaire, responses, and a summary of results, will be thoroughly documented. Finally, the chapter referring to the reflections on data gaps and supplementary information from the appendix will be incorporated to ensure a comprehensive and scientific presentation. The Jupyter book will be hosted in a GitHub repository, freely accessible, allowing for continuous updates and extensions of the content, besides easy access and modifications by the case study facilitators. A Figure of the footer of the Jupyter book can be seen below.</p>
 <p align="center">
-  <img width="460" height="300" src="screenshot.322.jpg">
+  <img width="620" height="200" src="screenshot.322.jpg">
 </p>
-<p>Cookbook “recipes”
-The following sections contain the technical specifications and tools selected from literature, organized taking into account the main underlying methodology with respect to those identified in Section 3, although it is worth noting that the case studies implementing the suggested “recipes” often adopt hybrid approaches, combining multiple methodologies.</p>
-<p>Description of Recipe and Identification:</p>
+<section id="cookbook-recipes">
+<h3>Cookbook “<em>recipes</em>”<a class="headerlink" href="#cookbook-recipes" title="Link to this heading">#</a></h3>
+<p>The following sections contain the technical specifications and tools selected from literature, organized taking into account the main underlying methodology with respect to those identified in Section 3, although it is worth noting that the case studies implementing the suggested “<em>recipes</em>” often adopt hybrid approaches, combining multiple methodologies.</p>
+<section id="description-of-recipe-and-identification">
+<h4>Description of Recipe and Identification:<a class="headerlink" href="#description-of-recipe-and-identification" title="Link to this heading">#</a></h4>
 <p>Due to the interdisciplinary character and diverse areas of application of the methodologies attempting a totally rigid categorization would only add additional confusion, if not, being far from realistic. Thus, the categorization of the recipes within the cookbook was tailored to align with the project’s objectives. As a result, a straightforward yet effective way to distinguish each recipe while providing a meaningful description was aimed. Each recipe is labeled using the following format:
 <em>Recipe - [Category in Cookbook] [Number] [Secondary Category/Example] [Additional Characterization]</em>
 An example: a recipe categorized under downscaling methodologies, listed second, focused on statistical downscaling methods and identified as a review paper The unique label would be the following:<br />
 Recipe CH01-DD-R, where:</p>
 <ul class="simple">
-<li><p>“CH” denotes Climate Charge and Hazard (or EV denotes Exposure and Vulnerability data),</p></li>
+<li><p>“CH” denotes <span class="target" id="index-0"></span>Climate and Charge Hazard(or EV denotes <span class="target" id="index-1"></span>Exposure and Vulnerability data),</p></li>
 <li><p>“01” represents the unique number,</p></li>
 <li><p>“DD” representing data-driven methodologies (if any), and</p></li>
 <li><p>“R” is appended to indicate it is a review paper.
 Thus, all labels in recipes within the cookbook will follow the same manner, depending on the subsection and category they belong to.</p></li>
 </ul>
+</section>
+</section>
 <section id="statistical-methods">
 <h3>Statistical methods<a class="headerlink" href="#statistical-methods" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -504,7 +512,11 @@ Thus, all labels in recipes within the cookbook will follow the same manner, dep
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cookbook-structure-and-general-template-in-jupyter-book">Cookbook structure and general template in Jupyter book</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cookbook-structure-and-general-template-in-jupyter-book"><o> Cookbook structure and general template in Jupyter book </o></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cookbook-recipes">Cookbook “<em>recipes</em>”</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#description-of-recipe-and-identification">Description of Recipe and Identification:</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-methods">Statistical methods</a></li>
 </ul>
 </li>
