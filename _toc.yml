@@ -5,9 +5,11 @@ format: jb-book
 root: content/recipes/introduction/introduction
 
 chapters:
-- file: content/about-icaria
+- file: content/About ICARIA
+- file: content/List of Acronyms and Abbreviations
 - file: content/Executive Summary
 - file: content/Objectives of the deliverable
+- file: Methodologies for data-gap filing and uncertainties treatment
 - file: content/Recurring data gaps in impact assessment modelling
 - file: content/ICARIA Cookbook recipes for data gap filling
 - file: content/ICARIA's domain user survey
