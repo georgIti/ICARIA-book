@@ -6,7 +6,6 @@ root: content/recipes/introduction/introduction
 
 chapters:
 - file: content/about-icaria
-- file: content/recipes/introduction/introduction
 - file: content/Executive Summary
 - file: content/Objectives of the deliverable
 - file: content/Recurring data gaps in impact assessment modelling
