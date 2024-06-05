@@ -9,15 +9,15 @@ A brief list of the experts and a description of the range of the topics are cov
 |<table>  <thead> <tr>  
 <tr>  <th> Name </th> <th> Institution </th>  <th> Expertise </th>  <th> Inter-/External </th>  </tr>  </thead>  <tbody>  
 <tr> <td> Robert Monjo i Agut </td>  <td> [FIC](https://ficlima.org/) </td>  <td><code> Climate statistical downscaling and weather data </code></td>  <td><code> Internal </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
-<tr> <td> V </td>  <td> Detailed z </td>  <td><code>Data </code></td>  <td><code> CFs </code></td> </tr>
+<tr> <td> Siddharth Seshan </td>  <td> [KWR](https://www.kwrwater.nl/en/) </td>  <td><code> AI models and data fusion techniques </code></td>  <td><code> External </code></td> </tr>
+<tr> <td> Mattia Federico Leone </td>  <td> [UNINA](https://www.docenti.unina.it/#!/professor/4d415454494120464544455249434f4c454f4e454c4e454d544637395231384638333944/riferimenti) </td>  <td><code> Expert in Climate Change </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Jose Luis Dominguez </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Expert in something </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Gerasimos Antzoulatos </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Computer intelligence methods and applications </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Damianos Mantsis </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Mathematics, Meteorology and Oceanography </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Kostantinos Vlachos </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Geoscience & RS in data-driven methodologies </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Ioannis Papoutsis </td>  <td> [National Observatory Athens](https://orionlab.space.noa.gr/team_members) </td>  <td><code> EO and AI methodologies; Climate change & natural disasters monitoring </code></td>  <td><code> External </code></td> </tr>
+<tr> <td> Ioannis Prapas </td>  <td> [National Observatory Athens](https://orionlab.space.noa.gr/team_members) </td>  <td><code> DL for Earth systems, Big Data, and ML methodologies   </code></td>  <td><code> External </code></td> </tr>
+<tr> <td> Spyros Kondylatos </td>  <td> [National Observatory Athens](https://orionlab.space.noa.gr/team_members) </td>  <td><code> DL for Earth systems, Bayesian DL, and Wildfire forecasting </code></td>  <td><code> External </code></td> </tr>
 </tbody>  </table> |
 
 Experts’ background spans a diverse pool of subjects, encompassing methodologies including but not limited to EO, RS, statistical and dynamical downscaling techniques, along with methodologies for DL, AI applied to climate resilience, and a range of other domains. Although the initial emphasis was placed on updating internal expertise, the participation of external specialists is equally indispensable in achieving the purpose of compiling lists of state-of-the-art emerging data-driven methodologies, particularly when integrated with insights from user studies. For the survey purposes, the EU Survey portal was used to initiate, create, publish, and collect the results of the survey. This portal offers a unique, user-friendly UI that intuitively guides the users through the creation of a survey, providing a plethora of options in terms of the structure of the survey. The link to the survey is provided in this link: [https://ec.europa.eu/eusurvey/runner/f96af3c2-67bc-11df-2c43-f5f6b97351cd](https://ec.europa.eu/eusurvey/runner/f96af3c2-67bc-11df-2c43-f5f6b97351cd). A figure of the survey as can be found in the EU survey’s dedicated web interface can be find below:
