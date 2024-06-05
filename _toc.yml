@@ -5,14 +5,14 @@ format: jb-book
 root: content/recipes/introduction/introduction
 
 chapters:
-- file: content/About ICARIA
-- file: content/List of Acronyms and Abbreviations
-- file: content/Executive Summary
-- file: content/Objectives of the deliverable
-- file: Methodologies for data-gap filing and uncertainties treatment
-- file: content/Recurring data gaps in impact assessment modelling
-- file: content/ICARIA Cookbook recipes for data gap filling
-- file: content/ICARIA's domain user survey
-- file: content/Conclusions
+- file: content/recipes/About ICARIA
+- file: content/recipes/List of Acronyms and Abbreviations
+- file: content/recipes/Executive Summary
+- file: content/recipes/Objectives of the deliverable
+- file: content/recipes/Methodologies for data-gap filing and uncertainties treatment
+- file: content/recipes/Recurring data gaps in impact assessment modelling
+- file: content/recipes/ICARIA Cookbook recipes for data gap filling
+- file: content/recipes/ICARIA's domain user survey
+- file: content/recipes/Conclusions
 - file: content/search-table
 - file: genindex.md
