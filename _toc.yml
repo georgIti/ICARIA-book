@@ -8,13 +8,13 @@ options:
 chapters:
   - file: content/recipes/About_ICARIA
   - file: content/recipes/List_of_Acronyms_and_Abbreviations
-  - file: content/recipes/Executive_Summary
+  - file: content/recipes/Executive_summary
   - file: content/recipes/Objectives_of_the_deliverable
   - file: content/recipes/Recurring_data_gaps_in_impact_assessment_modelling
-  - file: content/recipes/Methodologies_for_data-gap_filing_and_uncertainties_treatment
- - file: content/recipes/ICARTA_Cookbook_recipes_for_data_gap_filling
+  - file: content/recipes/Methodologies_for_data-gap_filling_and_uncertainties_treatment
+  - file: content/recipes/ICARIA_Cookbook_recipes_for_data_gap_filling
     sections:
-      - file: content/recipes/ICARTA's_domain_user_survey
+      - file: content/recipes/ICARIA's_domain_user_survey
       - file: content/recipes/Conclusions
   - file: content/search-table
   - file: genindex.md
