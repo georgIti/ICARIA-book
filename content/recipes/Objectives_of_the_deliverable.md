@@ -1,9 +1,9 @@
-# <u> Obejctives of the deliverable </u>
+# Objectives of the deliverable <
 
 <div style="text-align: justify">
 The document presents the creation of a complementary cookbook and the results of a domain user survey conducted within the ICARIA project. Specifically, this document corresponds to Deliverable 1.3 and includes the results of Task 1.3 - Modeling input requirements and methods to treat data gaps and uncertainties (Work Package 1 ({index}`WP1`) - Project framework, climate scenarios, and modeling inputs). </div>
 
-## <u> The necessity for a cookbook and a domain survey </u>
+## The necessity for a cookbook and a domain survey 
 Climate change impacts are produced by complex interactions, and are often characterized by compound events and cascading effects that demand tailored-made, sustainable adaptation solutions. To support the ICARIA holistic asset-level modeling framework defined in *D1.1*, this deliverable introduces a set of methodologies and tools to treat data gap and uncertainties with respect to modelling input requirements relevant for the case study areas, which has been designed as a “*cookbook*” potentially transferable to other contexts. Additionally, a dedicated domain user survey has been designed to specifically highlight critical data gaps recurring in the field of hazard and impact assessment. The necessity of both is preparatory, providing merely a scaffold for potential support and improvement of the current state-of-the-art methodologies already employed in ICARIA, which will be then tested in _D1.4_ for a number selected data gaps in the case study areas, and further applied in WP4 to cover all relevant data gaps emerging from the Trial execution. 
 
 The main goals of _D1.3_ are summarized as follows: 
@@ -20,7 +20,7 @@ The specific objectives of *D1.3* can be summarized as follows:
 * to provide templates to map data gap-filling and uncertainty treatment, including expert elicitation and user-provided data, in Trials and Mini-trials;
 * to conduct a domain survey about existing and emerging data-driven methodologies; to provide the results of the domain survey as a form of recommendation for the practitioners; 
 
-## <u> Structure of document </u>
+## Structure of document 
 
 The document is organized as follows: in Section 3, the main data gaps in relation to the ICARIA holistic modelling framework as emerged from Case Study Facilitators assessment and the results of the domain user survey are presented. In Section 4, the main methodologies used in ICARIA to treat data gaps and uncertainties are introduced, illustrating the the “ *cookbook*” structure and the Jupyter book. In section 5, dedicated tables list selected literature and reference studies with respect to the identified methodologies, including those preliminarily applied in Lab Task T1.4, for their potential adoption in WP4 for Trials implementation. In section 6, the domain user survey, developed as a dedicated questionnaire for experts internal or external to the ICARIA consortium, is presented. The survey is designed to include current and emerging trends in data-driven methodologies, and the section includes the results from the testing made by ten (10) selected experts. Finally, in the Conclusions, a reflection on the importance of treating data gaps and uncertainties even beyond the “*gap-filling*” issue, but rather in relation to the correct communication of hazard/impact modelling results to inform decision makers and practitioners is introduced, aimed at supporting the presentation of impact assessments and the identification of suitable resilience measures within CoP activities in WP5. The Appendix includes the main relevant open data repositories useful to support data-gap filling in ICARIA Trials.
  

@@ -1,4 +1,4 @@
-# <u>Introduction to project ICARIA</u>
+# Introduction to project ICARIA
 
 The number of climate-related disasters has been progressively increasing in the last two decades and this trend could be drastically exacerbated in the medium- and long-term horizons according to climate change projections. It is estimated that, between 2000 and 2019, 7,348 natural hazard-related disasters have occurred worldwide, causing 2.97 trillion US$ losses and affecting 4 billion people (UNDRR, 2020). These numbers represent a sharp increase in the number of recorded disaster events in comparison with the previous twenty years. Much of this increase is due to a significant rise in the number of climate-related disasters (heatwaves, droughts, flooding, etc.), including compound events, whose frequency is dramatically increasing because of the effects of climate change and related global warming. In the future, by mid-century, the world stands to lose around 10% of total economic value from climate change if the temperature increase stays on the current trajectory, and both the Paris Agreement and 2050 net-zero emissions targets are not met.
   

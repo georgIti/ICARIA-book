@@ -18,3 +18,4 @@ chapters:
       - file: content/recipes/Conclusions
   - file: content/search-table
   - file: genindex.md
+  - file: references.md
