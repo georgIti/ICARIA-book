@@ -1,4 +1,4 @@
-# Objectives of the deliverable <
+# Objectives of the deliverable 
 
 <div style="text-align: justify">
 The document presents the creation of a complementary cookbook and the results of a domain user survey conducted within the ICARIA project. Specifically, this document corresponds to Deliverable 1.3 and includes the results of Task 1.3 - Modeling input requirements and methods to treat data gaps and uncertainties (Work Package 1 ({index}`WP1`) - Project framework, climate scenarios, and modeling inputs). </div>
