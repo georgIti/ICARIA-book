@@ -2,7 +2,7 @@
 
 ## Climate hazards and extreme weather: A call for urgent action
 
-According to the United Nations, climate hazard-related disasters have risen significantly, with over `7,000 incidents between 2000 and 2019`. These events impacted 4 billion people and caused nearly $3 trillion in losses. This surge is primarily due to extreme weather events. If global temperatures continue to rise and net-zero targets aren’t met by 2050, 10% of the world’s economic value may be lost.
+According to the United Nation, climate hazard-related disasters have risen significantly, with over `7,000 incidents between 2000 and 2019`. These events impacted 4 billion people and caused nearly $3 trillion in losses. This surge is primarily due to extreme weather events. If global temperatures continue to rise and net-zero targets aren’t met by 2050, 10% of the world’s economic value may be lost.
 
 ## Empowering Climate Resilience: ICARIA’s Asset-Level Modeling Approach for {index}`Sustainable and Cost-Effective Adaptation Solutions`
 
