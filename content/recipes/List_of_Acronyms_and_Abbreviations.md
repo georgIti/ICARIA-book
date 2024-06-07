@@ -1,5 +1,5 @@
-# List of Acronyms and Abbreviations <br>
- <br>
+# List of Acronyms and Abbreviations 
+
 3CM Conceptual cognitive concept mapping <br>
 BHT Building height  <br>
 AAD Average Annual Damage <br>
