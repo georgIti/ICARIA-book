@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title> ICARIA’s domain user survey  &#8212; ICARIA book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/recipes/ICARIA's_domain_user_survey';</script>
+    <link rel="icon" href="../../_static/logo.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title=" Conclusions " href="Conclusions.html" />
+    <link rel="prev" title=" ICARIA cookbook: recipes for data gap filling " href="ICARIA_Cookbook_recipes_for_data_gap_filling.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="introduction/introduction.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="ICARIA book - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="ICARIA book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="introduction/introduction.html">
+                    <u>Introduction to project ICARIA</u>
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="List_of_Acronyms_and_Abbreviations.html">List of Acronyms and Abbreviations <br/></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Executive_summary.html"><u>Executive summary</u></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Objectives_of_the_deliverable.html"><u> Obejctives of the deliverable </u></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Recurring_data_gaps_in_impact_assessment_modelling.html"><u>Recurring data gaps in impact assessment modelling </u></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Methodologies_for_data-gap_filling_and_uncertainties_treatment.html"><u> Methodologies for data-gap filling and uncertainties treatment </u></a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ICARIA_Cookbook_recipes_for_data_gap_filling.html"><u> ICARIA cookbook: recipes for data gap filling </u></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><u> ICARIA’s domain user survey </u></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Conclusions.html"><u> Conclusions </u></a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../search-table.html">Search Table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/georgIti/ICARIA-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/georgIti/ICARIA-book/issues/new?title=Issue%20on%20page%20%2Fcontent/recipes/ICARIA's_domain_user_survey.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/recipes/ICARIA's_domain_user_survey.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><u> ICARIA’s domain user survey </u></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-objective-of-the-survey">The main objective of the survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-survey">Overview of the survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-the-survey">Summary of the Survey</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="icarias-domain-user-survey">
+<h1><u> ICARIA’s domain user survey </u><a class="headerlink" href="#icarias-domain-user-survey" title="Link to this heading">#</a></h1>
+<section id="the-main-objective-of-the-survey">
+<h2>The main objective of the survey<a class="headerlink" href="#the-main-objective-of-the-survey" title="Link to this heading">#</a></h2>
+<p>The development of ICARIA’s holistic model aligns with current SOTA methodologies, focusing on identifying risk/impact assessment strategies from a multi-hazard perspective and considering all climate-hazard categories, (including heatwaves, forest fires, droughts, floods, storm surges, and storm winds), covering complex, compound, and cascading events. However, accessing the replicability and capabilities of the holistic model remains the ultimate target. To achieve this, case study areas, namely the Barcelona Metropolitan Area, South Aegean Region, and Salzburg Region were subjected to combined climate-hazard events. This practical exposure allowed experts to concurrently assess and identify modeling gaps and uncertainties during the data collection phase. Subsequently, experts could unravel the correlations between impact/risk assessment methodologies, case study areas, and modeling requirements. While this approach provides a robust foundation for creating and applying the holistic model, the complementary input from experts regarding data gaps associated with data-driven methodologies remains crucial. This input is sought to address potential expansions and modifications of the chosen methodologies. The domain user survey serves exactly this complementary role, gathering answers from a panel of ten (10) experts (internally or externally to the consortium). Their expertise and experience in local and/or EU-funded projects guide an assessment of the latest state-of-the-art methodologies present in data-gaps treatment methodologies and data-driven techniques. The survey is structured following a systematic approach, commencing with the treatment of data gaps identified in previous projects where experts actively participated. This information is key, helping in recognizing recurring patterns of data gaps that may be shared across ICARIA and related projects, guiding case facilitators towards an extensive understanding of methodologies appropriate for addressing data gaps and uncertainties. Subsequently, as a second step, experts are prompted to identify potential knowledge gaps based on their practical experience. This aspect proves valuable in the analysis of both single and compound or cascading scenarios from local authorities and case facilitators, identifying vulnerabilities within specific risk categories. Further, an additional key point of the survey is the evaluation of the functionality and applicability of existing and emerging AI methodologies, specializing in utilizing AI to treat data gaps and address uncertainties within climate and CI datasets when modeling climate adaptation studies, mirroring the use cases of ICARIA. Lastly, experts are asked to provide references to milestone papers that may or may not play a crucial role in the integration of data gap treatment methodologies with AI techniques, potentially extending to areas such as climate data. This inclusion ensures that ICARIA remains aligned with the latest state-of-the-art approaches.</p>
+<p>A brief list of the experts and a description of the range of the topics are covered based on their background and expertise. While climate resilience remains the main object in the ICARIA project, diverse backgrounds of experts create a whole picture of the current practices for data-driven/AI-based methodologies (when applied to climate data or otherwise). The following list of ten (10) experts including their backgrounds and specialties can be found in Table #.</p>
+<table>  <thead> <tr>  
+<tr>  <th> Name </th> <th> Institution </th>  <th> Expertise </th>  <th> Inter-/External </th>  </tr>  </thead>  <tbody>  
+<tr> <td> Robert Monjo i Agut </td>  <td> [FIC](https://ficlima.org/)[FIC] </td>  <td><code> Climate statistical downscaling and weather data </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Siddharth Seshan </td>  <td> [KWR](https://www.kwrwater.nl/en/) </td>  <td><code> AI models and data fusion techniques </code></td>  <td><code> External </code></td> </tr>
+<tr> <td> Mattia Federico Leone </td>  <td> [UNINA](https://www.docenti.unina.it/#!/professor/4d415454494120464544455249434f4c454f4e454c4e454d544637395231384638333944/riferimenti) </td>  <td><code> Expert in Climate Change </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Jose Luis Dominguez </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Expert in something </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Gerasimos Antzoulatos </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Computer intelligence methods and applications </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Damianos Mantsis </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Mathematics, Meteorology and Oceanography </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Kostantinos Vlachos </td>  <td> [CERTH-ITI](https://m4d.iti.gr/team/) </td>  <td><code> Geoscience & RS in data-driven methodologies </code></td>  <td><code> Internal </code></td> </tr>
+<tr> <td> Ioannis Papoutsis </td>  <td> [National Observatory Athens](https://orionlab.space.noa.gr/team_members) </td>  <td><code> EO and AI methodologies; Climate change & natural disasters monitoring </code></td>  <td><code> External </code></td> </tr>
+<tr> <td> Ioannis Prapas </td>  <td> [National Observatory Athens](https://orionlab.space.noa.gr/team_members) </td>  <td><code> DL for Earth systems, Big Data, and ML methodologies   </code></td>  <td><code> External </code></td> </tr>
+<tr> <td> Spyros Kondylatos </td>  <td> [National Observatory Athens](https://orionlab.space.noa.gr/team_members) </td>  <td><code> DL for Earth systems, Bayesian DL, and Wildfire forecasting </code></td>  <td><code> External </code></td> </tr>
+</tbody>  </table>
+<p>Experts’ background spans a diverse pool of subjects, encompassing methodologies including but not limited to EO, RS, statistical and dynamical downscaling techniques, along with methodologies for DL, AI applied to climate resilience, and a range of other domains. Although the initial emphasis was placed on updating internal expertise, the participation of external specialists is equally indispensable in achieving the purpose of compiling lists of state-of-the-art emerging data-driven methodologies, particularly when integrated with insights from user studies. For the survey purposes, the EU Survey portal was used to initiate, create, publish, and collect the results of the survey. This portal offers a unique, user-friendly UI that intuitively guides the users through the creation of a survey, providing a plethora of options in terms of the structure of the survey. The link to the survey is provided in this link: <a class="reference external" href="https://ec.europa.eu/eusurvey/runner/f96af3c2-67bc-11df-2c43-f5f6b97351cd">https://ec.europa.eu/eusurvey/runner/f96af3c2-67bc-11df-2c43-f5f6b97351cd</a>. A figure of the survey as can be found in the EU survey’s dedicated web interface can be find below:</p>
+<p align="center">
+  <img width="460" height="300" src="bitmap.png">
+</p>
+</section>
+<section id="overview-of-the-survey">
+<h2>Overview of the survey<a class="headerlink" href="#overview-of-the-survey" title="Link to this heading">#</a></h2>
+<p>A summary of the results, and a brief description of the key methodologies proposed, as well as the output of the survey will be added below.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Nr.</p></th>
+<th class="head text-center"><p>Questions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1.</p></td>
+<td class="text-center"><p>Based on your expertise and experience from previous projects, please define data gap treatment methodologies used in previous EU-funded projects that you may have participated in and/or on-going projects that you currently implement.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2.</p></td>
+<td class="text-center"><p>Based on your expertise and experience from previous projects, please mention any knowledge gaps from practical experience in implementing trials or case studies in categories of datasets or methods for different elements of risk or different events or even for compound events.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3.</p></td>
+<td class="text-center"><p>Based on your expertise and experience from previous relevant projects, which do you think are the key aspects in using existing AI functionalities for filling the data gaps that occur in climate and CI datasets used for modelling the impacts of climate change or for scenario building in climate adaptation case studies or use cases? Please provide links for any sources, techniques and methods mentioned in your answer.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4.</p></td>
+<td class="text-center"><p>Based on your domain expertise, which do you think are the emerging AI functionalities that should be used for filling data gaps in climate and CI datasets in future related projects? Please refer to any limitations or pitfalls that these functionalities may have and need to be taken into account  Please provide links for any sources, techniques and methods mentioned in your answer.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>5.</p></td>
+<td class="text-center"><p>Please provide reference(s) for three (3) milestone research papers that you consider as crucial for the development of the methodology implemented in the ICARIA project. Elaborate shortly on the usage of each one in the context of the project.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Nr.</p></td>
+<td class="text-center"><p>Questions</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>1.</p></td>
+<td class="text-center"><p>Data gap treatment methodologies used in previous EU-funded projects: (1) interpolation, (2) gap filling with a specific value, (3) Kolmogorov-Smirnov-based inhomogeneity test, (4) masked modelling, (5) availability of accurate, high resolution (~ 2km) meteorological forecasts (used for training ML models, Copernicus ERA-5 reanalysis data), (6) availability of meteo forecasts of different quality standards (this distribution shift results in forecasting models to underperform), (7) lack of human-related assets (as opposed to environmental monitoring variables, that affect modelling climate change impacts; these assets are typically neglected, or proxies must be used e.g., population distribution and road network as a proxy for increased for example wildfire ignition risk), (8) simulations: atmospheric models to generate meteorological conditions in areas where observations at the desired frequency are missing. The generated data will have biases compared to the real data, and the quality will depend on the sophistication of the model simulation, (9) Multi-Stakeholder’s forums, (10) Leverage crowdsourcing and social media platforms (data from heterogeneous sources), (11) – Semantically representation (the usage of Smart Data Models and standardise data formats, units and structures, enables the seamless fusion and harmonisation of heterogeneous data ensuring compatibility, coherence and data sharing), (12) Specific domain ontologies ( in the context of climate and critical infrastructure (CI) datasets used for modeling climate change impacts or scenario building in climate adaptation case studies), and (13)  FAIR principles, data provenance.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2.</p></td>
+<td class="text-center"><p>Knowledge gaps from practical experience: (1) inhomogeneities, (2) outliers, (3) physical inconsistencies, (4) uncertainty of past events. Historical meteorological observations with adequate geographical coverage date back just a few decades in the past. For example, observations of sea surface temperature over the oceans or precipitation over the ocean or remote areas are absent beyond 1950. This means that records of historical extremes are not available, which can compromise the simulation of future extreme events, (5) Temporal resolution, (6) Spatial resolution, (7) Socioeconomic data, (8) Incomplete datasets, (9) Incomplete event catalogues of natural disasters, (10) Real-time data and monitoring, (11) Lack of annotated datasets, (12) Limiting effectiveness of predictive models, (13) High uncertainty in climate models, and (14) Risk mapping (creation of accurate hazard and risk maps).</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3.</p></td>
+<td class="text-center"><p>Existing AI functionalities: (1) temporal and spatial auto-correlation, (2) climate projections &amp; simulations, (3) domain adaptation models, (4) non-stationarity (due to climate change are key aspects that should be taken into account, especially for the evaluation), (5) use of spatiotemporal masked autoencoders for pre-training on the available data (and make them more resilient to data-gaps), (6) missing data imputation (using data-driven algorithms), (7) anomaly detection, (8) synthetic data generation, (9) heterogeneolus data integration (techniques like data fusion and ensemble learning can help combine different datasets effectively), (10) interoperability (harmonizing data forms and formats), (11) digital twin (AI can generate multiple scenarios for climate adaptation by simulating various climate and socio-economic conditions in a Digital Twin environment), (12) spatial downscaling (AI techniques like convolutional neural networks (CNNs) can downscale global  climate model outputs to higher resolutions needed for local impact assessments), (13) temporal downscaling (AI can refine temporal granularity of climate data, making it suitable for  short-term event analysis and adaptation planning, (14) uncertainty analysis (AI can be used to quantify uncertainties in climate projections and impact assessments. Bayesian neural networks and ensemble learning methods can provide probabilistic estimates and confidence intervals, (15) sensitivity analysis (AI can perform sensitivity analysis, identifying the most influential  variables and reducing uncertainty in model predictions), (16) trend Analysis (AI algorithms can identify long-term trends and patterns in climate and CI datasets, helping to detect gradual changes and emerging risks, (17) real-time monitoring (AI can process real-time data from sensors and IoT devices to provide immediate insights into current climate conditions and infrastructure status, and (18) dynamic adaptation (AI can be used to dynamically adjust models and scenarios based on real-time data, enhancing the responsiveness of climate adaptation strategies.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4.</p></td>
+<td class="text-center"><p>Emerging AI functionalities: (1) domain adaptation models, extrapolation (2) AI methods: GANs, Diffusion models, (3) self-supervised learning, (4) physics-aware models, (5) self-supervised pre-training, creation of ML-based emulators of physical purposes, (6) Reinforcement Learning (RL), (7) Spatial-Temporal Graph Neural Networks (ST-GNNs), Long Short-Term Memory (LSTM) Networks, (8) Synthetic Minority Over-sampling Technique (SMOTE).</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>5.</p></td>
+<td class="text-center"><p>Reference(s) for three (3) milestone research papers: Source for Kolmogorov-Smirnov goodness-of-fit test(1), Example of a physics-aware model(2),  Example of DL application for Earth system science(3), Example of causal relations from data(4), Example of DL forecasts from sparse observations(5), Artificial intelligence reconstructs missing climate information.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="summary-of-the-survey">
+<h2>Summary of the Survey<a class="headerlink" href="#summary-of-the-survey" title="Link to this heading">#</a></h2>
+<p>The summary of the domain user survey for data gap treatment methodologies, knowledge gaps from practical experience, and AI functionalities can be organized in three lines: (1) Data gap treatment, (2) Existing AI functionalities, and (3) Emerging AI functionalities. The list of the experts who participated in the survey shared their extensive experience in participating in previous and current EU-funded projects and highlighted data inhomogeneity and inconsistency as the main issues to be addressed. For that reason, methodologies such as interpolation, value data gap filling, and inhomogeneity tests were proposed. Additionally, it was underlined that high-resolution meteorological forecasts and Copernicus ERA-5 reanalysis data are critical for training machine learning models, though varying quality standards can impact forecasting accuracy. This is only an example of the utilization of machine learning and AI methodologies for climate change.  In terms of AI functionalities, current AI capabilities include temporal and spatial auto-correlation, climate projections and simulations, domain adaptation models, non-stationarity, and the use of spatiotemporal masked autoencoders as key candidate methodologies to improve resilience to data gaps. This is reflected in the ICARIA project and has the potential to be linked with the climate change and hazard data for cases where weather data are in scarcity (e.g. not fully covering the studied area or when weather observations are not reaching the minimum years necessary for providing accurate and robust output). Further, improving climate change methodologies using AI tools, should include a list of emerging methods including, domain adaptation models, extrapolation AI methods such as Generative Adversarial Neural Networks (GANs), Diffusion models, self-supervised learning, physics-aware models, and self-supervised pre-training, creation of machine learning-based emulators of physical purposes. These methodologies allow for further investigation and application through ICARIA’s lab tests and trials and mini-trials, allowing for inclusion of the suggestions from experts, utilizing concrete tools developed in previous EU-funded and other various related projects. The diversity of the experts allows for creating a more complete idea of the applicability of AI tools, and how realistic such tools would be for ICARIA’s purposes.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\recipes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ICARIA_Cookbook_recipes_for_data_gap_filling.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><u> ICARIA cookbook: recipes for data gap filling </u></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Conclusions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><u> Conclusions </u></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-objective-of-the-survey">The main objective of the survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-survey">Overview of the survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-the-survey">Summary of the Survey</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By ITI-CERTH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The ICARIA book is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a> (CC BY 4.0) license.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
