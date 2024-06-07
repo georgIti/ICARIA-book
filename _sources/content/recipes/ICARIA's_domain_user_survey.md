@@ -1,4 +1,4 @@
-# <u> ICARIA’s domain user survey </u>
+# ICARIA’s domain user survey 
  
 ## The main objective of the survey
 

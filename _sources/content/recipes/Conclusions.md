@@ -1,4 +1,4 @@
-# <u> Conclusions </u> 
+# Conclusions 
 
 The issue of data gaps and uncertainties treatment in quantitative hazard/impact assessment is crucial to guarantee reliability of results. A variety of methods and tools can be found in literature, with robust approaches that can increasingly rely on the ever-growing availability of high-resolution information from remote sensing, in-situ monitoring networks and citizen-science tools, as well as of computing capacity enhanced by machine learning and AI. Nevertheless, the identification and communication of data gaps and uncertainties related to specific hazard/impact modelling results is important beyond the “*data gap filling problem*”, to acknowledge uncertainties and limitations in risk assessments and simulations derived by the implementation of the ICARIA Holistic modelling framework in any s case study area.
 
