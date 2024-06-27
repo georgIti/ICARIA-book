@@ -18,18 +18,18 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
@@ -37,16 +37,16 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -140,6 +140,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="introduction/introduction.html">
   
@@ -161,7 +163,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -220,9 +222,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -347,10 +349,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -358,7 +360,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -390,7 +392,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="executive-summary">
 <h1>Executive summary<a class="headerlink" href="#executive-summary" title="Link to this heading">#</a></h1>
-<p>This document presents the ICARIA cookbook and offers a set of alternative options for optimal methodologies, treatment of data gaps, and a list of sources for collecting any further potentially available data. As ICARIA aims to establish a robust and efficient framework for climate adaptation and resilience, such a document might serve as a scaffold for lab tests within the project for application and extension of the currently applied methodologies. Nonetheless, selecting an optimal or combination of various methodologies can often prove perplexing. It is far from uncommon to encounter circumstances where data scarcity emerges as a consistent challenge, especially for assets and services sensitive to the initial amount of available data. Consequently, the role of the existing climate data in fully characterizing the overall risk/impact assessment methodology from a single or multi-hazard perspective, supporting the selection of optimal methodologies, identifying data gaps, and ultimately guiding and contributing to the formulation of effective decision-making policies amidst the exigency of climate change, remains crucial. Further, when confronted with issues in climate adaptation and resilience, it is critical to consider that data gaps introduce substantial uncertainties in impact assessments, vulnerability analysis, and the design of adaptation strategies, thereby hindering the development of effective resilience measures capable of invariance to various contexts. To support addressing the critical challenge of data gaps, within ICARIA’s goals, the design of a supplementary cookbook is included, aimed at assisting practitioners operating within ICARIA in identifying alternative methodologies for data creation and augmentation in supporting the applied viable methodologies being employed in cases where the need to extend and support the currently chosen ones, remains necessary. In section 2, the cookbook attempts to include briefly some of the methodologies applied in ICARIA so far, a list of currently identified data gaps, and provide suggestions for downscaling techniques, hazard assessment, exposure analysis, vulnerability evaluation, and strategies to address data gaps, exploring alternative methods and concepts relevant to the application of climate-related methodologies in resilience and adaptation. To support any further lab tests within ICARIA, a template table for treating data gaps is proposed. Furthermore, it includes sets of additional data sources for assets and services, as examples for further application and reproduction in other areas of interest. While the cookbook covers different methodologies, the sequence is not paramount; rather, the relevance to the core resilience domains and compatibility with the ICARIA project are the primary considerations. In section 3, a domain user survey is conducted utilizing input from experts with diverse backgrounds, offering additional information on current data-driven methodologies related but not limited to climate change and adaptation, and additional resources for the practitioners of the ICARIA project. Finally, in section 4, a summary with reflections on treating data gaps is offered, summarizing in a condensed manner the current knowledge and state-of-the-art.</p>
+<p>This document presents the ICARIA cookbook and offers a set of alternative options for optimal methodologies, treatment of data gaps, and a list of sources for collecting any further potentially available data. As ICARIA aims to establish a robust and efficient framework for climate adaptation and resilience, such a document might serve as a scaffold for lab tests within the project for application and extension of the currently applied methodologies. Nonetheless, selecting an optimal or combination of various methodologies can often prove perplexing. It is far from uncommon to encounter circumstances where data scarcity emerges as a consistent challenge, especially for assets and services sensitive to the initial amount of available data. Consequently, the role of the existing climate data in fully characterizing the overall risk/impact assessment methodology from a single or multi-hazard perspective, supporting the selection of optimal methodologies, identifying data gaps, and ultimately guiding and contributing to the formulation of effective decision-making policies amidst the exigency of climate change, remains crucial.</p>
+<p>Further, when confronted with issues in climate adaptation and resilience, it is critical to consider that data gaps introduce substantial uncertainties in impact assessments, vulnerability analysis, and the design of adaptation strategies, thereby hindering the development of effective resilience measures capable of invariance to various contexts. To support addressing the critical challenge of data gaps, within ICARIA’s goals, the design of a supplementary cookbook is included, aimed at assisting practitioners operating within ICARIA in identifying alternative methodologies for data creation and augmentation in supporting the applied viable methodologies being employed in cases where the need to extend and support the currently chosen ones, remains necessary. In section 2, the cookbook attempts to include briefly some of the methodologies applied in ICARIA so far, a list of currently identified data gaps, and provide suggestions for downscaling techniques, hazard assessment, exposure analysis, vulnerability evaluation, and strategies to address data gaps, exploring alternative methods and concepts relevant to the application of climate-related methodologies in resilience and adaptation. To support any further lab tests within ICARIA, a template table for treating data gaps is proposed. Furthermore, it includes sets of additional data sources for assets and services, as examples for further application and reproduction in other areas of interest. While the cookbook covers different methodologies, the sequence is not paramount; rather, the relevance to the core resilience domains and compatibility with the ICARIA project are the primary considerations. In section 3, a domain user survey is conducted utilizing input from experts with diverse backgrounds, offering additional information on current data-driven methodologies related but not limited to climate change and adaptation, and additional resources for the practitioners of the ICARIA project. Finally, in section 4, a summary with reflections on treating data gaps is offered, summarizing in a condensed manner the current knowledge and state-of-the-art.</p>
 <p>This deliverable is the first result of T1.3 with inputs from T1.1, T1.2, and T1.4, in WP1 and T2.1 in WP2.</p>
 </section>
 
@@ -495,8 +498,8 @@ By ITI-CERTH
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
