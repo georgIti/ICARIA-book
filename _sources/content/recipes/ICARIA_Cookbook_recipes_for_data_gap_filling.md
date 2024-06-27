@@ -25,7 +25,7 @@ Thus, all labels in recipes within the cookbook will follow the same manner, dep
 
 ### Statistical methods
 
-### Dynamical downscaling methods
+### Statistical downscaling methods
 
 #### S1. Long-term daily stream temperature record for Scotland reveals spatio-temporal patterns in warming of rivers in the past and further warming in the future
 
@@ -116,7 +116,7 @@ Thus, all labels in recipes within the cookbook will follow the same manner, dep
 |Recipe Number <br> CH-EV-S13|<table>  <thead> <tr> <tr> <th></th> <th> </th> <th> </th>  </tr> </thead>  <tbody> <tr> <td> </td>  <td>Variables (Input)</td> <td><code> <ul> <li>Climate parameters: (i) Solar radiation, (ii) Sunshine duration, (iii) Temperature, (iv) Relative humidity, and (v) Wind speed and (vi) rainfall. </li> <li>Long-term yearly predicted temperature maps. </ul> </code></td> </tr>  <tr> <td></td>  <td>Methods/Models</td>  <td><code> <ul> <li>Interpolation techniques: (1) Inverse distance weighted (IDW), (2) Global polynomial interpolation (GPI), (3) Local polynomial interpolation (LPI), (4) Completely regularized spline (CRI), (5) Cokriging, and (6) Kriging with four subtypes: (i) Ordinary kriging (KO), (ii) Simple kriging (KS), (iii) Universal kriging (KU), and (iv) Disjunctive kriging (KD). </li> </ul></code></td>   </tr>  <tr> <td> </td> <td>Results/Remarks</td>  <td><code> <ul> <li>Maps of long-term yearly predicted temperature in the studied area. </li> <li>Spatial interpolation techniques are utilized for distribution of climate parameters. </li> </ul></code></td> </tr>  <tr> <td>Resources</td> <td  colspan="2"> <code> N/A </code> </td> </tr>  <tr> <td>Keywords</td> <td  colspan="2">Spatial interpolation; Inverse distance weighted; Polynomial interpolation; Kriging; Cokriging; Completely regularized spline.</td> </tr> <tr> <td>Tag/Type</td> <td colspan="2">Climate Change and Hazard data; Exposure and Vulnerability data.</td> </tr> <tr> <td>Application in ICARIA</td> <td>Potential use in ICARIA </td>  <td><code> Improved mapping of local climate change hazard conditions and of critical variables for exposure and vulnerability assessment through geostatistical interpolation techniques.</code></td> </tr> </tbody> </table> |
 
  
-### Data-driven based methodologies
+### Dynamical downscaling methodologies
 
 #### D1. A simple hybrid statistical–dynamical downscaling method for emulating regional climate models over Western Europe. Evaluation, application, and role of added value?
 |       Abbrev   |	Categories and data			 |
