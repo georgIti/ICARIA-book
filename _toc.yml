@@ -17,4 +17,5 @@ chapters:
       - file: content/recipes/ICARIA's_domain_user_survey
       - file: content/recipes/Conclusions
   - file: genindex.md
+  - file: content/search-table.md
   - file: content/references.md
